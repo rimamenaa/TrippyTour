@@ -16,7 +16,7 @@ export class Navbar extends Component {
         <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
-        <ul className="nav-menu">
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, i) => {
             return (
               <li key={i}>
